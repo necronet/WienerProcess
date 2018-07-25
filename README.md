@@ -1,12 +1,11 @@
 # Wiener process animated GIF with R
+[Post complete code](https://github.com/necronet/WienerProcess)
 
-This post is based on [Javi Fernandez Post](http://allthiswasfield.blogspot.com/2017/12/p-margin-bottom-0.html) "Brownian Motion GIF with R and ImageMagick". 
-
-This is a modify version with a refactor functions to generate the simulated process and some minor fixes, but the overall process keeps the same core idea. 
+This post is based on [Javi Fernandez Post](http://allthiswasfield.blogspot.com/2017/12/p-margin-bottom-0.html) "Brownian Motion GIF with R and ImageMagick". This is a modify version with a refactor functions to generate the simulated process and some minor fixes, but the overall process keeps the same core idea. 
 
 Let's explore the concept of what **Brownian motion** is? Basically is the random motion of particles suspended in a liquid or gas (not very helpful right), there is an interesting story into how it came to be [discovered by botanist Robert Brown](https://www.youtube.com/watch?v=FAdxd2Iv-UA) and later describe by Einstein, but that is away from the scope of this humble post. 
 
-How the simulation works? 
+## How the simulation works? 
 
 Well basically it uses the `rnom` function to mimic the randomness of the motion, in fact I could argue that the proper title should be [Wiener Process](https://en.wikipedia.org/wiki/Wiener_process) instead of Brownian motion as it explained more the core part of the data frame that is generated, although both of those term are correlated nonetheless. Here is a snipted of the functions that randomly generate data frame of motion:
 
@@ -67,6 +66,5 @@ Last but not least we paste this using the command "convert" from [imagemagick t
 
 Et voila! the result look like this:
 
-![Motion of wiener process generated GIF]()
+![Motion of wiener process generated GIF](./animated-gif/bm.gif)
 
-Visit the repo for the full code 
